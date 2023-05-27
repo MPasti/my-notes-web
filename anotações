@@ -1,0 +1,60 @@
+01. Git é um sistema de controle de versão open source, designado para lidar com qualquer projeto, seja pequeno ou grande
+02. São em repositórios, ambientes para armazenar o código na nuvem.
+03. Branch é o nome dado a uma versão (ramificação) do projeto. Como se o projeto fosse uma árvore, e cada versão é um ramo novo
+pois assim garante segurança e estabilidade para o projeto original. 
+04. Merge, serve para mesclar, unir as modificações feitas no código original. Se é em larga escala, todos que estão mexendo
+estão mesclando para todos modificarem sem dar conflito.
+
+Major: é o 1.0 ou 2.0, é a versão que impacta, que faz mudanças grandes de compatibilidades
+Minor: versão 2.0.2 vira 2.1.0, é uma versão substancial que adiciona e não há problemas de compatibilidade com as outras versões
+pois muda pouco conteúdo
+Patch: 2.1.0 para 2.1.1, correção de bugs, melhoria de desempenho, alterações que não mudam tanto as funcionalidades atuais
+apenas regulam poucas coisas.
+
+Main: Principal código-fonte em produção, não é permitido realizar alterações diretamente até aceitar as mudanças
+Develop: cont´ém o código fonte mais atual e todas as novas features estáveis que serão mescladas
+Features: é uma branch temporária que carrega uma nova funcionalidade para o projeto, ela sempre acabará sendo mesclada à propria 
+develop
+
+Hotfix
+
+abrir com o gitbash no ctrl + j do vscode
+tem opções ao lado no + para escolher o tipo de terminal
+com o botão direito é possivel abrir a pasta com o gitbash tbm
+
+git status fala como está o repositório
+(vai dar fatal erro pois apagamos o .git)
+git init
+começa o repositorio - vai aparecer arquivos vermelhos (eles ainda não foram adicionados no comit
+git add index.html
+git add . (adiciona tudo)
+git reset (arquivo) reseta os arquivos que não devem ser enviados
+git reset dependencies - retira essa tal pasta pesada
+arquivo de texto .gitignore
+	(dentro desse arquivo você escreve o nome da pasta que devemos ignorar
+	botando a dependencies lá, ela não vai sequer ser mostrada no git status
+git commit -m (serve para mensagem
+git commit -m "first commit"
+git remote add origin https://github.com/MPasti/my-notes-web.git$ git push -u origin master
+
+$ git push -u origin master para subir com o login
+
+fazer o ambiente de desenvolvimento no git
+
+$ git branch
+lista as ramificações existentes
+
+$git checkout -b(nome da branch)
+ela vai ser criada a partir da master, da principal
+
+$git checkout (nome) acessa a branch desejada
+
+$git push - u origin homolog
+atualiza o ambiente remoto
+
+criamos 3 linhas distintas 
+
+dentro de uma branch essas mudanças ficam restritas apenas a elas
+
+$git merge feature/(nome da branch)
+
